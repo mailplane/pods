@@ -10,6 +10,7 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = "10.9"
   s.source                = { :git => "https://github.com/replies/RepliesMac.git", :tag => "0.1.0" }
   s.source_files          = "**/*.{h,m}"
+  s.resources             = "**/*.{xib}"
   s.exclude_files         = "Tester"
   s.framework             = "AVFoundation", "WebKit", "Cocoa"
   s.requires_arc          = true
