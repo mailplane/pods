@@ -11,6 +11,7 @@ Pod::Spec.new do |s|
   s.source                = { :git => "https://github.com/replies/RepliesMac.git", :tag => "0.1.0" }
   s.source_files          = "**/*.{h,m}"
   s.resources             = "**/*.{xib,pdf}"
+  s.osx.resource_bundle   = { "RepliesMac" => [ "RepliesMac/*.lproj" ] }
   s.exclude_files         = "Tester"
   s.framework             = "AVFoundation", "WebKit", "Cocoa"
   s.requires_arc          = true
